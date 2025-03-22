@@ -1,0 +1,56 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.thumb-2 {
+    width: 140px;
+    height: 90px;
+    border-radius: 0;
+    border: 1px solid #333;
+    transition: transform 0.2s ease;
+}
+
+.thumb-2:hover {
+    transform: scale(1.15);
+}
+
+.lightbox-2 {
+    position: fixed;
+    background-color: rgba(50, 50, 50, 0.85);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-2.show {
+    display: flex;
+}
+
+.lightbox-2 img {
+    max-width: 80%;
+    max-height: 85%;
+    box-shadow: 0 0 20px #000;
+}
+
+.close-2 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #f00;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
